@@ -52,11 +52,42 @@
                         <input type="radio" value="Venti" name="size" />
                         <label for="">Venti</label>
                     </div>
-                </section>
+
+                <div id="orderOptions" class="dairy">
+                    <label for=""><strong>Dairy & Non-Dairy: </strong></label>
+                    <br>
+                    <input type="radio" required value="Cream" name="dairy" />
+                    <label for="">Cream</label>
+                    <br>
+                    <input type="radio" required value="Almond Milk" name="dairy" />
+                    <label for="">Almond Milk</label>
+                    <br>
+                    <input type="radio" required value="Oat Milk" name="dairy" />
+                    <label for="">Oat Milk</label>
+                    <br>
+                    <input type="radio" required value="None" name="dairy" />
+                    <label for="">None</label>
+                </div>
+
+                <div id="orderOptions" class="toppings">
+                    <label for=""><strong>Special Toppings: </strong></label>
+                    <br>
+                    <input type="checkbox" value="Whipped Cream" name="toppings" />
+                    <label for="">Whipped Cream</label>
+                    <br>
+                    <input type="checkbox" value="Cold Foam" name="toppings" />
+                    <label for="">Cold Foam</label>
+                    <br>
+                    <input type="checkbox" value="Mocha Drizzle" name="toppings" />
+                    <label for="">Mocha Drizzle</label>
+                    <br>
+                    <input type="checkbox" value="Caramel Drizzle" name="toppings" />
+                    <label for="">Caramel Drizzle</label>
+                </section>  
     
                 <section class="submitOrderSection">
-                    <button class="submitOrder" type="submit">Submit</button>   
-                </section>            
+                    <button class="submitOrder" type="submit">Submit</button>       
+            </section>      
             </form>
     
         <% if (locals.success) { %>
