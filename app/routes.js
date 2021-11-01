@@ -37,6 +37,8 @@ module.exports = function (app, passport, db, ObjectId) {
       customer,
       beverage,
       size,
+      dairy,
+      toppings,
     } = req.body;
 
     db.collection('orders').save(
@@ -45,6 +47,8 @@ module.exports = function (app, passport, db, ObjectId) {
         customer,
         beverage,
         size,
+        dairy,
+        toppings,
         awaiting: true,
         completed: false,
       },
